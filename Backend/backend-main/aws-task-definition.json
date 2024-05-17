@@ -1,0 +1,79 @@
+{
+    "taskDefinitionArn": "arn:aws:ecs:us-west-2:236322310200:task-definition/trail-exp-backend-task-definition:23",
+    "containerDefinitions": [
+        {
+            "name": "trail-exp-backend",
+            "image": "236322310200.dkr.ecr.us-west-2.amazonaws.com/trail-explorer-backend:c4bbd1ba946f0dd4421d1c46faad0936b7e3f662",
+            "cpu": 0,
+            "portMappings": [
+                {
+                    "name": "trail-exp-backend-5000-tcp",
+                    "containerPort": 5000,
+                    "hostPort": 8080,
+                    "protocol": "tcp",
+                    "appProtocol": "http"
+                }
+            ],
+            "essential": true,
+            "environment": [],
+            "mountPoints": [],
+            "volumesFrom": [],
+            "logConfiguration": {
+                "logDriver": "awslogs",
+                "options": {
+                    "awslogs-create-group": "true",
+                    "awslogs-group": "/ecs/trail-exp-backend-task-definition",
+                    "awslogs-region": "us-west-2",
+                    "awslogs-stream-prefix": "ecs"
+                },
+                "secretOptions": []
+            },
+            "systemControls": []
+        }
+    ],
+    "family": "trail-exp-backend-task-definition",
+    "taskRoleArn": "arn:aws:iam::236322310200:role/ecsTaskExecutionRole",
+    "executionRoleArn": "arn:aws:iam::236322310200:role/ecsTaskExecutionRole",
+    "revision": 23,
+    "volumes": [],
+    "status": "ACTIVE",
+    "requiresAttributes": [
+        {
+            "name": "com.amazonaws.ecs.capability.logging-driver.awslogs"
+        },
+        {
+            "name": "ecs.capability.execution-role-awslogs"
+        },
+        {
+            "name": "com.amazonaws.ecs.capability.ecr-auth"
+        },
+        {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.19"
+        },
+        {
+            "name": "com.amazonaws.ecs.capability.task-iam-role"
+        },
+        {
+            "name": "ecs.capability.execution-role-ecr-pull"
+        },
+        {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.29"
+        }
+    ],
+    "placementConstraints": [],
+    "compatibilities": [
+        "EC2"
+    ],
+    "requiresCompatibilities": [
+        "EC2"
+    ],
+    "cpu": "819",
+    "memory": "819",
+    "runtimePlatform": {
+        "cpuArchitecture": "X86_64",
+        "operatingSystemFamily": "LINUX"
+    },
+    "registeredAt": "2024-04-05T05:36:47.294Z",
+    "registeredBy": "arn:aws:iam::236322310200:user/Govardhan",
+    "tags": []
+}
