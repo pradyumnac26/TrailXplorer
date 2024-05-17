@@ -1,0 +1,174 @@
+.home {
+  height: 30vh;
+  background: linear-gradient(rgba(33, 33, 33, 0.522), rgba(33, 33, 33, 0.522)), url("../../Assets/top-of-mountain-hiking-ssuknid9vlyemcl4.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  position: relative;
+}
+.home .seccontainer .homeText {
+  text-align: center;
+}
+.home .seccontainer .homeText .title {
+  color: var(--textColor);
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+}
+.home .seccontainer .homeText .subTitle {
+  color: var(--whiteColor);
+  opacity: 0.9;
+  font-size: 13px;
+  font-weight: 300;
+  padding: 1rem 0;
+  max-width: 70%;
+  text-align: center;
+  margin: auto;
+}
+.home .seccontainer .homeText .btn {
+  padding: 0.6rem 1.5rem;
+}
+.home .seccontainer .homeCard {
+  width: 80%;
+  border-radius: 1rem;
+  padding: 2rem;
+  background: var(--whiteColor);
+  position: absolute;
+  gap: 1rem;
+  justify-content: center;
+  bottom: -35%;
+  transform: translate(-50%);
+  left: 50%;
+  box-shadow: 0 2px 8px 4px rgba(178, 178, 178, 0.45);
+}
+.home .seccontainer .homeCard .inputgroup {
+  display: flex;
+  gap: 1rem;
+}
+.home .seccontainer .homeCard .locationDiv,
+.home .seccontainer .homeCard .trailLengthDiv {
+  width: 100%;
+}
+.home .seccontainer .homeCard .locationDiv label,
+.home .seccontainer .homeCard .trailLengthDiv label {
+  display: block;
+  color: var(--textColor);
+  font-weight: 500;
+  font-size: 13px;
+  padding-bottom: 0.4rem;
+}
+.home .seccontainer .homeCard .locationDiv input,
+.home .seccontainer .homeCard .locationDiv select,
+.home .seccontainer .homeCard .locationDiv .input,
+.home .seccontainer .homeCard .trailLengthDiv input,
+.home .seccontainer .homeCard .trailLengthDiv select,
+.home .seccontainer .homeCard .trailLengthDiv .input {
+  width: 100%;
+  background: var(--inputColor);
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  font-size: 13px;
+  font-weight: 500;
+}
+.home .seccontainer .homeCard .locationDiv input::-moz-placeholder, .home .seccontainer .homeCard .locationDiv select::-moz-placeholder, .home .seccontainer .homeCard .locationDiv .input::-moz-placeholder, .home .seccontainer .homeCard .trailLengthDiv input::-moz-placeholder, .home .seccontainer .homeCard .trailLengthDiv select::-moz-placeholder, .home .seccontainer .homeCard .trailLengthDiv .input::-moz-placeholder {
+  font-size: 13px;
+  opacity: 0.5;
+  font-weight: 400;
+}
+.home .seccontainer .homeCard .locationDiv input::placeholder,
+.home .seccontainer .homeCard .locationDiv select::placeholder,
+.home .seccontainer .homeCard .locationDiv .input::placeholder,
+.home .seccontainer .homeCard .trailLengthDiv input::placeholder,
+.home .seccontainer .homeCard .trailLengthDiv select::placeholder,
+.home .seccontainer .homeCard .trailLengthDiv .input::placeholder {
+  font-size: 13px;
+  opacity: 0.5;
+  font-weight: 400;
+}
+.home .seccontainer .homeCard .locationDiv input:focus,
+.home .seccontainer .homeCard .locationDiv select:focus,
+.home .seccontainer .homeCard .locationDiv .input:focus,
+.home .seccontainer .homeCard .trailLengthDiv input:focus,
+.home .seccontainer .homeCard .trailLengthDiv select:focus,
+.home .seccontainer .homeCard .trailLengthDiv .input:focus {
+  outline: none;
+}
+.home .seccontainer .homeCard .locationDiv input .btn,
+.home .seccontainer .homeCard .locationDiv select .btn,
+.home .seccontainer .homeCard .locationDiv .input .btn,
+.home .seccontainer .homeCard .trailLengthDiv input .btn,
+.home .seccontainer .homeCard .trailLengthDiv select .btn,
+.home .seccontainer .homeCard .trailLengthDiv .input .btn {
+  width: 100%;
+  padding: 0.6rem 0.5rem;
+  color: var(--whiteColor);
+  font-weight: 600;
+}
+.home .seccontainer .homeCard .locationDiv input .capitalize,
+.home .seccontainer .homeCard .locationDiv select .capitalize,
+.home .seccontainer .homeCard .locationDiv .input .capitalize,
+.home .seccontainer .homeCard .trailLengthDiv input .capitalize,
+.home .seccontainer .homeCard .trailLengthDiv select .capitalize,
+.home .seccontainer .homeCard .trailLengthDiv .input .capitalize {
+  text-transform: capitalize;
+}
+.home .seccontainer .tileGroups {
+  width: 90%;
+  position: absolute;
+  top: 140%;
+  gap: 1rem;
+  justify-content: center;
+  transform: translate(-50%);
+  left: 50%;
+}
+
+@media screen and (min-width: 480px) {
+  .home .seccontainer .homeCard {
+    width: 90%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .home .seccontainer .homeCard .btn {
+    transform: translateY(15px);
+  }
+}
+:root {
+  --PrimaryColor: hsl(26, 93%, 50%);
+  --HoverColor: hsl(26, 90%, 42%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --textColor: hsl(240, 1%, 48%);
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyBg: hsl(0, 0%, 96%);
+  --greyText: rgb(199, 199, 199);
+  --inputColor: hsl(330, 12%, 97%);
+}
+
+input {
+  font-size: 100%;
+}
+
+.btn {
+  padding: 0.4rem 1.5rem;
+  background-color: var(--PrimaryColor);
+  color: var(--whiteColor);
+  border: none;
+  outline: none;
+  border-radius: 3rem;
+  cursor: pointer;
+}
+.btn a {
+  color: var(--whiteColor);
+  font-weight: 500;
+  text-decoration: none;
+}
+.btn:hover {
+  background-color: var(--HoverColor);
+}
+.btn-primary {
+  background-color: var(--PrimaryColor);
+}/*# sourceMappingURL=Home.css.map */

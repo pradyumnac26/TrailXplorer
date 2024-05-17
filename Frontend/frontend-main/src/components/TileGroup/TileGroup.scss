@@ -1,0 +1,94 @@
+.tile-group {
+    margin: 0 auto;
+    padding: 1rem;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+    .title {
+        color: var(--textColor);
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 2.5rem;
+        margin-left: 1rem;
+        align-items: center;
+        display: flex;
+
+        .filter-icon {
+            color: var(--primaryColor);
+            font-size: 2.25rem;
+            align-items: center;
+            cursor: pointer;
+            padding: 0.5rem;
+            border-radius: 2.25rem;
+        }
+
+        .filter-icon:hover {
+            color: var(--primaryColor);
+            background-color: rgb(224, 222, 222);
+            opacity: 0.8;
+        }
+    }
+
+    .tile-group-parent {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .arrow {
+            opacity: 0.5;
+            cursor: pointer;
+        }
+
+        .arrow:hover {
+            opacity: 1;
+        }
+
+        .arrow-left {
+            position: absolute;
+            left: -2%;
+        }
+
+        .arrow-right {
+            position: absolute;
+            right: -2%;
+        }
+
+        .tile-group-container {
+            display: flex;
+            overflow-x: auto;
+            width: 100%;
+            flex-direction: row;
+            scroll-behavior: smooth;
+            align-items: center;
+            justify-content: flex-start;
+
+            .trail-card-parent {
+                display: inline-block;
+                border-width: 0;
+                padding: 1rem;
+                background: var(--whiteColor);
+            }
+        }
+
+        .empty-trails {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100px;
+        }
+    }
+
+    .disable-scrollbars {
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* IE 10+ */
+
+        &::-webkit-scrollbar {
+            background: transparent; /* Chrome/Safari/Webkit */
+            width: 0px;
+        }
+    }
+}

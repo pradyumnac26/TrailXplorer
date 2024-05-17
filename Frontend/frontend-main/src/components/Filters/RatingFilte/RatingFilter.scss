@@ -1,0 +1,29 @@
+.rating-filter {
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+
+    .rating-button {
+        padding: 0.5rem 1rem;
+        border-radius: 10px;
+        border: none;
+        background: --var(inputColor);
+        color: black;
+        font-weight: 500;
+        font-size: 13px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+            background: lightgrey;
+            color: black;
+        }
+    }
+
+    .selected {
+        background: grey;
+        color: white;
+    }
+}

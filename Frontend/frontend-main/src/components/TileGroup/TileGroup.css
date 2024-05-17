@@ -1,0 +1,81 @@
+.tile-group {
+  margin: 0 auto;
+  padding: 1rem;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.tile-group .title {
+  color: var(--textColor);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2.5rem;
+  margin-left: 1rem;
+  align-items: center;
+  display: flex;
+}
+.tile-group .title .filter-icon {
+  color: var(--primaryColor);
+  font-size: 2.25rem;
+  align-items: center;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 2.25rem;
+}
+.tile-group .title .filter-icon:hover {
+  color: var(--primaryColor);
+  background-color: rgb(224, 222, 222);
+  opacity: 0.8;
+}
+.tile-group .tile-group-parent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.tile-group .tile-group-parent .arrow {
+  opacity: 0.5;
+  cursor: pointer;
+}
+.tile-group .tile-group-parent .arrow:hover {
+  opacity: 1;
+}
+.tile-group .tile-group-parent .arrow-left {
+  position: absolute;
+  left: -2%;
+}
+.tile-group .tile-group-parent .arrow-right {
+  position: absolute;
+  right: -2%;
+}
+.tile-group .tile-group-parent .tile-group-container {
+  display: flex;
+  overflow-x: auto;
+  width: 100%;
+  flex-direction: row;
+  scroll-behavior: smooth;
+  align-items: center;
+  justify-content: flex-start;
+}
+.tile-group .tile-group-parent .tile-group-container .trail-card-parent {
+  display: inline-block;
+  border-width: 0;
+  padding: 1rem;
+  background: var(--whiteColor);
+}
+.tile-group .tile-group-parent .empty-trails {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100px;
+}
+.tile-group .disable-scrollbars {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+.tile-group .disable-scrollbars::-webkit-scrollbar {
+  background: transparent; /* Chrome/Safari/Webkit */
+  width: 0px;
+}/*# sourceMappingURL=TileGroup.css.map */

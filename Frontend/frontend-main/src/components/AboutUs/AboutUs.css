@@ -1,0 +1,62 @@
+/* aboutUs.css */
+
+.about-us-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+}
+  
+.team-container {
+    max-width: 1200px;
+    width: 100%; /* Takes the full width of the flex container up to max-width */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-container h1 {
+    margin-bottom: 30px; /* Additional space below the 'Our Team' header */
+}
+  
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centers the cards within the container */
+    gap: 20px;
+}
+  
+.team-member {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    width: calc(33.333% - 20px); /* Adjusts the width to fit 3 items per row, accounting for the 20px gap */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+  
+.team-member img {
+    width: 150px; /* Increased size from 100px */
+    height: 150px; /* Increased size from 100px */
+    border-radius: 50%; /* Keeps the image circular */
+    margin-bottom: 10px;
+}
+  
+.team-member h2 {
+    font-size: 20px;
+    margin: 10px 0 5px;
+}
+  
+.team-member p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+  
+.team-member a {
+    color: #337ab7;
+    text-decoration: none;
+}
+.team-member a:hover {
+    text-decoration: underline;
+}

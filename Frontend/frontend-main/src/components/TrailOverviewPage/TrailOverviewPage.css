@@ -1,0 +1,465 @@
+/* General layout and styling */
+.code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.home1 {
+    height: 30vh;
+    background: linear-gradient(rgba(33, 33, 33, 0.522), rgba(33, 33, 33, 0.522)), url("../../Assets/top-of-mountain-hiking-ssuknid9vlyemcl4.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    position: relative;
+  }
+
+  .seccontainer1 {
+    max-width: 1200px; /* Or whatever max-width you want */
+    margin: auto; /* This will center the container */
+    padding: 20px;
+}
+
+.homeText1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.title1 {
+    text-transform: capitalize;
+    font-size: 2rem;
+    color: #ccc;
+}
+
+.descriptionSection {
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif; /* Apply Roboto font */
+}
+
+.descriptionSection h2 {
+    font-size: 1.5rem; /* Adjust heading font size */
+    color: #333; /* Adjust heading color */
+    margin-bottom: 10px; 
+    /* Add some space below the heading */
+}
+.weatherDataSection h2{
+    font-size: 1.5rem; /* Adjust heading font size */
+    color: #333; /* Adjust heading color */
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+}
+
+.descriptionSection p {
+    font-size: 1rem; /* Adjust paragraph font size */
+    color: #666; /* Adjust paragraph color */
+    line-height: 1.5; /* Adjust paragraph line height for better readability */
+}
+
+.weatherDataSection {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width:100%;
+}
+
+
+.weatherDataSection h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+    white-space: nowrap;
+}
+
+.weatherSection {
+    margin-top: 40px;
+    background-color: #f7f7f7;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    padding: 20px 10px 20px 10px; ;
+    border-radius: 8px;
+    
+}
+
+.weatherSection h2 {
+    color: #333;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+    .weatherDataSection {
+        flex-direction: row;
+    }
+}
+
+
+
+.subTitle, .cityState {
+    font-size: 1rem; /* Adjust font size as needed */
+    color: #ccc; /* This is a lighter grey, adjust as needed */
+    margin-top: 5px; 
+    text-transform: capitalize;/* Adds a little space between the area name and the city/state */
+}
+
+.rating {
+    position: relative;
+    padding: 20px 0;
+}
+
+.rating .fullStar, .rating .halfStar, .rating .emptyStar {
+    color: #f7f406;
+    margin-right: 2px;
+    font-size: 18px;
+}
+
+.rating .halfStar {
+    position: relative;
+}
+
+.elevationSection {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;  
+    background: white;
+
+}
+
+.elevationSection h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+    white-space: nowrap;
+}
+
+.chartContainer {
+    width: 100%;
+    padding: 10px 10px 10px 20px; ;
+    background: white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+    border-radius: 10px;
+
+}
+
+.chartContainer1 {
+    width: 50%;
+    padding: 10px 10px 10px 20px; ;
+    background: white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+    border-radius: 10px;
+    margin: auto;
+}
+
+.rating .halfStar:before {
+    content: "☆"; /* Empty star character for the half-star overlay */
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #f7f406;
+    clip-path: inset(0 50% 0 0); /* Clips the star to half its width */
+    z-index: 1;
+}
+
+.imageGallerySection {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width:100%;/* Subtle shadow for depth */
+}
+
+.imageGallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* This creates a responsive grid with a minimum column width of 250px */
+    gap: 10px; /* This is the space between the images */
+    align-items: stretch; /* This will make sure that the items are of equal height */
+    justify-items: stretch; /* Stretch the items to fit the grid area */
+  }
+  
+  .imageGallery img {
+    width: 100%; /* This makes the image fill the container width */
+    height: 200px; /* Fixed height for all images */
+    object-fit: cover; /* Covers the container with the image without distortion */
+    border-radius: 8px; /* Optional rounded corners */
+  }
+
+
+.rating .emptyStar {
+    color: #ccc;
+}
+
+.rating span {
+    color: #fff;
+    padding: 0 5px;
+}
+
+
+
+/* Weather card styling */
+.weatherCard {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 450px;
+    margin-right: 20px;
+    font-family: 'Roboto', sans-serif;
+    transition: box-shadow 0.3s ease-in-out; 
+}
+
+.weatherCardHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+.weatherCardBody h3 {
+    margin-bottom: 20px;
+}
+
+.weatherInfo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+.weatherInfoRow {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; /* This will space out the two items evenly */
+    margin-bottom: 10px; /* Adds space between the rows */
+}
+
+.weatherInfoItem {
+    flex-basis: calc(50% - 10px); /* subtracting the total margin from 50% width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+        /* Other styles... */
+/* Add some margin to the left if needed */
+ /* provides spacing between the items */
+}
+
+.weatherInfoItem img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.gearTag {
+    display: inline-block;
+    margin: 5px;
+    padding: 8px 16px;
+    font-size: 14px; /* Adjust based on your preference */
+    color: #333; /* Dark grey text */
+    background-color: #f0f0f0; /* Light grey background */
+    border: 1px solid #ddd; /* Light grey border */
+    border-radius: 5px; /* Rounded edges for the pill shape */
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.12); /* Subtle shadow for depth */
+    cursor: default; /* Default cursor */
+    transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+.gearTag:hover {
+    background-color: #e9e9e9; /* Darker grey background on hover */
+    border-color: #ccc; /* Darker border color on hover */
+}
+
+.sectionHeader {
+    border-bottom: 1px solid #ccc; /* Solid border, 2 pixels thick, dark color */
+    padding-bottom: 10px; /* Space between text and border *//* Ensure the border only takes up the width of the text */
+    margin-bottom: 20px; /* Space after the border to the next content */
+}
+
+
+.trailDetailsBar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.gearListSection {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width:100%;
+  }
+  
+  .gearListSection h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .gearListSection ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .gearListSection li {
+    background: #f7f7f7;
+    margin-bottom: 8px;
+    padding: 10px;
+    border-radius: 4px;
+  }
+
+.detailItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.detailTitle {
+    font-family: 'Arial', sans-serif;
+    font-size: 0.75em;
+    font-weight: bold;
+    color: #524c4cd1;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.detailValue {
+    font-family: 'Arial', sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    color: #333;
+}
+
+.mainContent {
+    width: 75%;
+    float: left;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-right: 25%;
+}
+
+.sidebar {
+    position: sticky;
+    width: 25%;
+    background: white;
+    padding: 20px;
+    position: fixed; /* Changed from absolute to fixed for better scrolling behavior */
+    right: 0;
+    top: 365px;
+    bottom: 0;
+    overflow: auto;
+    border-left: 2px solid #ccc;
+    
+}
+.sidebarSection {
+    top: 0;
+    position: sticky;
+    margin-bottom: 20px;
+    padding: 10px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+
+.sidebarItem {
+    margin-bottom: 20px;
+    padding: 10px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.featuresList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Adjust the spacing between the tags as needed */
+    margin: 10px 0;
+}
+
+.mapSection {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width:100%;
+   /* Include padding and border in the width */
+}
+
+/* Ensure the map has a specific height and is responsive */
+.leaflet-container {
+    height: 400px;              /* Fixed height for the map */
+    width: 100%;                /* Full width to fill the container */
+    border-radius: 8px;         /* Rounded corners for the map */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Slight shadow for the map itself */
+}
+
+/* Additional styling for the map heading */
+.mapSection h2 {
+    
+    color: #333;                /* Darker text color for better readability */
+    margin-bottom: 10px;        /* Space between the title and the map */
+}
+
+.featureTag {
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    border-radius: 20px; /* Gives a pill-like shape to the tags */
+    background-color: #b0d6dd;
+    font-size: 0.875em;
+    color: #333;
+    text-transform: capitalize;
+    cursor: default;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1); /* Optional: adds a subtle shadow for depth */
+    transition: all 0.3s ease;
+}
+
+.featureTag:hover {
+    background-color: #f7f7f7; /* Slightly darker on hover for interactive feel */
+    border-color: #bbb;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .weatherInfo {
+        flex-direction: column;
+    }
+    .mainContent, .sidebar {
+        width: 100%;
+        float: none;
+    }
+    .sidebar {
+        position: relative;
+        top: auto;
+    }
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,65 @@
+.paginationGroup {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    .titleGroup {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 1rem;
+
+        .back-button {
+            background: var(--whiteColor);
+            border: none;
+            border-radius: 50%;
+            padding: 0.5rem;
+            cursor: pointer;
+            box-shadow: 0 2px 8px 4px rgba(178, 178, 178, 0.45);
+            transition: all 0.3s ease;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+        .title {
+            color: var(--textColor);
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 2.5rem;
+            margin-left: 1rem;
+            align-items: center;
+            display: flex;
+        }
+
+        .filter-icon {
+            color: var(--primaryColor);
+            font-size: 2.25rem;
+            align-items: center;
+            cursor: pointer;
+            padding: 0.5rem;
+            border-radius: 2.25rem;
+        }
+
+        .filter-icon:hover {
+            color: var(--primaryColor);
+            background-color: rgb(224, 222, 222);
+            opacity: 0.8;
+        }
+    }
+}
+
+.grid-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding-left: 2rem;
+    margin-bottom: 2rem;
+    gap: 1.5rem;
+
+    .empty-trails {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+    }
+}
