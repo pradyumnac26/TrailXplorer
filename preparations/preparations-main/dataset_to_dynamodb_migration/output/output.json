@@ -1,0 +1,39 @@
+{
+  "Item": {
+    "col1_str": {
+      "S": "str1"
+    },
+    "col2_num": {
+      "N": "100"
+    },
+    "col3_bool": {
+      "BOOL": true
+    }
+  }
+}
+{
+  "Item": {
+    "col1_str": {
+      "S": "str2"
+    },
+    "col2_num": {
+      "N": "200"
+    },
+    "col3_bool": {
+      "BOOL": false
+    }
+  }
+}
+{
+  "Item": {
+    "col1_str": {
+      "S": "str3"
+    },
+    "col2_num": {
+      "N": "300"
+    },
+    "col3_bool": {
+      "BOOL": true
+    }
+  }
+}

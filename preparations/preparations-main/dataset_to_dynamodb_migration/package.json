@@ -1,0 +1,32 @@
+{
+  "name": "csv-to-dynamodbjson-converter",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": "^16"
+  },
+  "volta": {
+    "node": "16.19.0"
+  },
+  "scripts": {
+    "start": "node index.js \"./output/cleaned_alltrails.csv\" \"./output/trailsdataset.json\"",
+    "lint": "eslint . --ext .js",
+    "format": "eslint . --ext .js --fix"
+  },
+  "devDependencies": {
+    "aws-sdk": "^2.1383.0",
+    "eslint": "^8.33.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsdoc": "^39.7.5",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.3",
+    "semver": "^7.3.8",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "@aws-sdk/util-dynamodb": "^3.338.0",
+    "csvtojson": "^2.0.10"
+  }
+}

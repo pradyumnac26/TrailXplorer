@@ -1,0 +1,4 @@
+col1_str,col2_num,col3_bool
+"str1",100,true
+"str2",200,false
+"str3",300,true
